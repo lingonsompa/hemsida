@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Thomas Östervall">
+    <meta name="description" content="Sida där man kan ändra och lägga till information">
+    <meta name="generator" content="pycharm">
+    <meta name=keywords" content="">
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <script src=
+"https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="skolSchema.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+<nav>
+    <li><a href="home.html">Startsida</a></li>
+    <li><a href="show.html">Visa scheman</a></li>
+    <li><a href="addAndChange.html">Lägg till och ändra</a></li>
+    <li><a href="instruction.html">Hur gör man?</a></li>
+
+</nav>
+
+<main>
+<div class="changeClass">
+    <h4> Lägg till en klass</h4>
+    <label for="newClassName">Klassens namne:</label><br>
+    <input type="text" id="newClassName"><br>
+    <button id="submitNewClass">Ange</button>
+</div>
+
+<div class="addSubject">
+    <h4>Lägg till ämne</h4>
+    <label for="newSubject">Namn på ämne:</label><br>
+         <input type="text" id="newSubject"><br>
+     <label for="colorPicker">Välj färg för ämnet:</label>
+   <input type="color" id="colorPicker" value="#0000ff"><br>
+    <button id="submitNewSubject">Ange</button>
+
+</div>
+
+<div class="addLesson">
+    <h4>Lägg till en lektion</h4>
+    <label for="choosenClass">Välj en klass:</label>
+        <select name="choosenClass" id="choosenClass">
+        </select>
+    <label for="choosenSubject">Välj ett ämne:</label>
+    <select name="choosenSubject" id="choosenSubject">
+        </select>
+    <label for="choosenWeekDay">Välj en veckodag:</label>
+    <select id="choosenWeekDay">
+        <option value="0">Måndag</option>
+        <option value="1">Tisdag</option>
+        <option value="2">Onsdag</option>
+        <option value="3">Torsdag</option>
+        <option value="4">Fredag</option>
+        </select>
+    <label for="startTime">Starttid:</label>
+    <input  id="startTime">
+    <label for="endTime">Sluttid:</label>
+    <input id="endTime">
+    <button id="submitLesson">Ange</button>
+
+
+</div>
+
+
+
+    <div class="here_table"></div>
+    <div class='upperPart'></div>
+
+
+
+</main>
+
+</body>
+</html>
